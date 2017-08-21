@@ -15,7 +15,6 @@ services:
       - RABBITMQ_USERNAME=paclabs
     volumes:
       - 'rabbitmq_data:/bitnami'
-services:
   stats:
     image: bitnami/rabbitmq
     environment:
@@ -23,7 +22,7 @@ services:
       - RABBITMQ_NODE_NAME=rabbit@stats
       - RABBITMQ_ERLANG_COOKIE=s3cr3tc00ki3
     ports:
-      - '15672:15672'
+      - '14672:14672'
     volumes:
       - 'rabbitmqstats_data:/bitnami'
   queue-disc1:
