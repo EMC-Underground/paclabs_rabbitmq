@@ -1,0 +1,13 @@
+# Cache objects
+packer_cache/
+
+# For built boxes
+*.box
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform*
+*.txt 
+*.un~ 
+*.yml~ 
+*.tf~ 
