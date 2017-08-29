@@ -11,3 +11,4 @@ packer_cache/
 *.un~ 
 *.yml~ 
 *.tf~ 
+*.sh~ 

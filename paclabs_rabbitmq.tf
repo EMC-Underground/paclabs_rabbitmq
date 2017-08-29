@@ -62,7 +62,7 @@ resource "vsphere_virtual_machine" "rabbitmq" {
   provisioner "remote-exec" {
     inline = [
       "chmod +x /tmp/script.sh",
-      "echo password | sudo -S /tmp/script.sh"
+      "echo Password#1 | sudo -S /tmp/script.sh"
     ]
 
     connection {
